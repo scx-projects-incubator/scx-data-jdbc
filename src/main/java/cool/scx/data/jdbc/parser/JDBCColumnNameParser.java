@@ -1,8 +1,8 @@
 package cool.scx.data.jdbc.parser;
 
-import cool.scx.data.aggregation.FieldGroupBy;
-import cool.scx.data.query.Condition;
-import cool.scx.data.query.OrderBy;
+import dev.scx.data.aggregation.FieldGroupBy;
+import dev.scx.data.query.Condition;
+import dev.scx.data.query.OrderBy;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.mapping.Table;
 

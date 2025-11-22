@@ -2,7 +2,7 @@ package cool.scx.data.jdbc.mapping;
 
 import cool.scx.jdbc.JDBCType;
 import cool.scx.jdbc.mapping.DataType;
-import cool.scx.reflect.TypeInfo;
+import dev.scx.reflect.TypeInfo;
 
 import static cool.scx.data.jdbc.mapping.AnnotationConfigHelper.getDataTypeByJavaType;
 import static cool.scx.jdbc.JDBCType.VARCHAR;

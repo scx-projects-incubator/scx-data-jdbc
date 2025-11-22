@@ -1,6 +1,6 @@
 package cool.scx.data.jdbc.sql_builder;
 
-import cool.scx.data.field_policy.FieldPolicy;
+import dev.scx.data.field_policy.FieldPolicy;
 import cool.scx.data.jdbc.mapping.EntityTable;
 import cool.scx.data.jdbc.parser.JDBCColumnNameParser;
 import cool.scx.jdbc.dialect.Dialect;
@@ -61,7 +61,7 @@ public class InsertSQLBuilder {
         var insertColumns = filterByUpdateFieldPolicy(fieldPolicy, table, entity);
         //2, 根据 字段策略 创建插入的表达式列
         var insertExpressionsColumns = createInsertExpressionsColumns(fieldPolicy, columnNameParser);
-        //3, 创建 插入值 其实都是 '?' 
+        //3, 创建 插入值 其实都是 '?'
         var insertValues = createInsertValues(insertColumns);
         //4, 创建 插入表达式
         var insertExpressionsValue = createInsertExpressionsValue(fieldPolicy);
@@ -81,7 +81,7 @@ public class InsertSQLBuilder {
         var insertColumns = filterByUpdateFieldPolicy(fieldPolicy, table);
         //2, 根据 字段策略 创建插入的表达式列
         var insertExpressionsColumns = createInsertExpressionsColumns(fieldPolicy, columnNameParser);
-        //3, 创建 插入值 其实都是 '?' 
+        //3, 创建 插入值 其实都是 '?'
         var insertValues = createInsertValues(insertColumns);
         //4, 创建 插入表达式
         var insertExpressionsValue = createInsertExpressionsValue(fieldPolicy);
