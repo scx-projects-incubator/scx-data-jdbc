@@ -1,7 +1,7 @@
 package cool.scx.data.jdbc;
 
-import cool.scx.data.context.TransactionContext;
-import cool.scx.data.exception.DataAccessException;
+import dev.scx.data.context.TransactionContext;
+import dev.scx.data.exception.DataAccessException;
 
 import java.sql.Connection;
 import java.sql.SQLException;

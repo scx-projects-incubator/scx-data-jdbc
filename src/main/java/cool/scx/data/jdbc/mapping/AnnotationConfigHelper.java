@@ -1,7 +1,7 @@
 package cool.scx.data.jdbc.mapping;
 
 import cool.scx.jdbc.JDBCType;
-import cool.scx.reflect.TypeInfo;
+import dev.scx.reflect.TypeInfo;
 
 import static cool.scx.common.util.ClassUtils.isEnum;
 import static cool.scx.jdbc.JDBCType.JSON;

@@ -1,6 +1,6 @@
 package cool.scx.data.jdbc.test;
 
-import cool.scx.data.LockMode;
+import dev.scx.data.LockMode;
 import cool.scx.data.jdbc.JDBCRepository;
 import cool.scx.jdbc.SchemaHelper;
 import cool.scx.jdbc.sql.SQL;
@@ -11,9 +11,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static cool.scx.data.field_policy.FieldPolicyBuilder.include;
+import static dev.scx.data.field_policy.FieldPolicyBuilder.include;
 import static cool.scx.data.jdbc.test.JDBCDaoTest.jdbcContext;
-import static cool.scx.data.query.QueryBuilder.eq;
+import static dev.scx.data.query.QueryBuilder.eq;
 
 /// 转账测试
 public class TransferTest {

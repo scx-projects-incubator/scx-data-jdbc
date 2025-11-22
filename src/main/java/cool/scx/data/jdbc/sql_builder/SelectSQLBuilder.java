@@ -1,20 +1,20 @@
 package cool.scx.data.jdbc.sql_builder;
 
 import cool.scx.common.constant.CharPools;
-import cool.scx.data.LockMode;
-import cool.scx.data.field_policy.FieldPolicy;
+import dev.scx.data.LockMode;
+import dev.scx.data.field_policy.FieldPolicy;
 import cool.scx.data.jdbc.mapping.EntityTable;
 import cool.scx.data.jdbc.parser.JDBCOrderByParser;
 import cool.scx.data.jdbc.parser.JDBCWhereParser;
-import cool.scx.data.query.Query;
+import dev.scx.data.query.Query;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.sql.SQL;
 
 import static cool.scx.common.util.ArrayUtils.concat;
 import static cool.scx.common.util.RandomUtils.randomString;
 import static cool.scx.common.util.StringUtils.notEmpty;
-import static cool.scx.data.LockMode.EXCLUSIVE;
-import static cool.scx.data.LockMode.SHARED;
+import static dev.scx.data.LockMode.EXCLUSIVE;
+import static dev.scx.data.LockMode.SHARED;
 import static cool.scx.data.jdbc.sql_builder.SQLBuilderHelper.filterByQueryFieldPolicy;
 import static cool.scx.data.jdbc.sql_builder.SQLBuilderHelper.joinWithQuoteIdentifier;
 import static cool.scx.jdbc.sql.SQL.sql;
@@ -41,7 +41,7 @@ public class SelectSQLBuilder {
         for (var fieldExpression : fieldExpressions) {
             var fieldName = fieldExpression.virtualFieldName();
             var expression = fieldExpression.expression();
-            // 这个虚拟列 因为可能在表中不存在 所以此处不进行名称映射了 直接引用包装一下即可  
+            // 这个虚拟列 因为可能在表中不存在 所以此处不进行名称映射了 直接引用包装一下即可
             virtualSelectColumns[i] = expression + " AS " + dialect.quoteIdentifier(fieldName);
             i = i + 1;
         }

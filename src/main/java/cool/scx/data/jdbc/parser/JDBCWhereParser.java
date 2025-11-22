@@ -3,7 +3,7 @@ package cool.scx.data.jdbc.parser;
 import cool.scx.common.util.StringUtils;
 import cool.scx.data.jdbc.exception.WrongConditionParamTypeException;
 import cool.scx.data.jdbc.exception.WrongConditionTypeParamSizeException;
-import cool.scx.data.query.*;
+import dev.scx.data.query.*;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.sql.SQL;
 
@@ -12,8 +12,8 @@ import java.util.Arrays;
 import java.util.Objects;
 
 import static cool.scx.common.util.ArrayUtils.toObjectArray;
-import static cool.scx.data.query.QueryBuilder.and;
-import static cool.scx.data.query.QueryBuilder.or;
+import static dev.scx.data.query.QueryBuilder.and;
+import static dev.scx.data.query.QueryBuilder.or;
 import static java.util.Collections.addAll;
 
 /// JDBCDaoWhereParser
@@ -135,7 +135,7 @@ public class JDBCWhereParser {
             };
         }
 
-        // 类似这种 "name = " 
+        // 类似这种 "name = "
         var columnDefinition = columnNameParser.parseColumnName(w) + " " + getWhereKeyWord(w) + " ";
 
         //表达式值
@@ -177,7 +177,7 @@ public class JDBCWhereParser {
             throw new WrongConditionTypeParamSizeException(w.selector(), w.conditionType(), 1);
         }
 
-        // 类似这种 "name = " 
+        // 类似这种 "name = "
         var columnDefinition = columnNameParser.parseColumnName(w) + " " + getWhereKeyWord(w) + " ";
 
         //表达式值

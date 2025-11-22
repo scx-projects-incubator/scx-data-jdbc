@@ -1,9 +1,9 @@
 package cool.scx.data.jdbc;
 
-import cool.scx.data.*;
-import cool.scx.data.aggregation.Aggregation;
-import cool.scx.data.exception.DataAccessException;
-import cool.scx.data.field_policy.FieldPolicy;
+import dev.scx.data.*;
+import dev.scx.data.aggregation.Aggregation;
+import dev.scx.data.exception.DataAccessException;
+import dev.scx.data.field_policy.FieldPolicy;
 import cool.scx.data.jdbc.column_name_mapping.BeanColumnNameMapping;
 import cool.scx.data.jdbc.column_name_mapping.MapFieldNameMapping;
 import cool.scx.data.jdbc.mapping.AnnotationConfigTable;
@@ -13,7 +13,7 @@ import cool.scx.data.jdbc.parser.JDBCGroupByParser;
 import cool.scx.data.jdbc.parser.JDBCOrderByParser;
 import cool.scx.data.jdbc.parser.JDBCWhereParser;
 import cool.scx.data.jdbc.sql_builder.*;
-import cool.scx.data.query.Query;
+import dev.scx.data.query.Query;
 import cool.scx.jdbc.JDBCContext;
 import cool.scx.jdbc.result_handler.ResultHandler;
 import cool.scx.jdbc.result_handler.bean_builder.BeanBuilder;

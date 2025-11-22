@@ -2,7 +2,7 @@ package cool.scx.data.jdbc.sql_builder;
 
 import cool.scx.data.jdbc.parser.JDBCOrderByParser;
 import cool.scx.data.jdbc.parser.JDBCWhereParser;
-import cool.scx.data.query.Query;
+import dev.scx.data.query.Query;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.mapping.Table;
 import cool.scx.jdbc.sql.SQL;

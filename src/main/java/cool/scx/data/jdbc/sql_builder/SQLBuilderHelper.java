@@ -1,15 +1,15 @@
 package cool.scx.data.jdbc.sql_builder;
 
-import cool.scx.data.exception.DataAccessException;
-import cool.scx.data.field_policy.AssignField;
-import cool.scx.data.field_policy.FieldPolicy;
-import cool.scx.data.field_policy.VirtualField;
+import dev.scx.data.exception.DataAccessException;
+import dev.scx.data.field_policy.AssignField;
+import dev.scx.data.field_policy.FieldPolicy;
+import dev.scx.data.field_policy.VirtualField;
 import cool.scx.data.jdbc.mapping.EntityColumn;
 import cool.scx.data.jdbc.mapping.EntityTable;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.mapping.Column;
 import cool.scx.jdbc.mapping.Table;
-import cool.scx.reflect.FieldInfo;
+import dev.scx.reflect.FieldInfo;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -27,7 +27,7 @@ class SQLBuilderHelper {
         var assignFields = fieldPolicy.getAssignFields();
         columns = filterByAssignFields(assignFields, table, columns);
 
-        //3, 根据 是否包含空值进行过滤 
+        //3, 根据 是否包含空值进行过滤
         var globalIgnoreNull = fieldPolicy.getIgnoreNull();
         var ignoreNulls = fieldPolicy.getIgnoreNulls();
         return filterByFieldValueIsNull(entity, globalIgnoreNull, ignoreNulls, columns);

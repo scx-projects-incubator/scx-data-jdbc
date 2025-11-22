@@ -1,6 +1,6 @@
 package cool.scx.data.jdbc.exception;
 
-import cool.scx.data.query.ConditionType;
+import dev.scx.data.query.ConditionType;
 
 /// WhereBody 参数长度异常
 ///

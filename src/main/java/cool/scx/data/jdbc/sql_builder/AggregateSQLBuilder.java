@@ -1,13 +1,13 @@
 package cool.scx.data.jdbc.sql_builder;
 
-import cool.scx.data.aggregation.Aggregation;
-import cool.scx.data.aggregation.ExpressionGroupBy;
-import cool.scx.data.aggregation.FieldGroupBy;
+import dev.scx.data.aggregation.Aggregation;
+import dev.scx.data.aggregation.ExpressionGroupBy;
+import dev.scx.data.aggregation.FieldGroupBy;
 import cool.scx.data.jdbc.mapping.EntityTable;
 import cool.scx.data.jdbc.parser.JDBCGroupByParser;
 import cool.scx.data.jdbc.parser.JDBCOrderByParser;
 import cool.scx.data.jdbc.parser.JDBCWhereParser;
-import cool.scx.data.query.Query;
+import dev.scx.data.query.Query;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.sql.SQL;
 

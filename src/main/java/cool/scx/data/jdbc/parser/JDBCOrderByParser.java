@@ -1,6 +1,6 @@
 package cool.scx.data.jdbc.parser;
 
-import cool.scx.data.query.OrderBy;
+import dev.scx.data.query.OrderBy;
 
 import java.util.ArrayList;
 

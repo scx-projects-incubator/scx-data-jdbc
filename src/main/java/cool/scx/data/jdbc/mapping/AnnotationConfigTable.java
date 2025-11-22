@@ -1,11 +1,11 @@
 package cool.scx.data.jdbc.mapping;
 
-import cool.scx.collections.multi_map.MultiMap;
+import dev.scx.collections.multi_map.MultiMap;
 import cool.scx.common.util.CaseUtils;
 import cool.scx.data.jdbc.annotation.NoColumn;
-import cool.scx.reflect.ClassInfo;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ScxReflect;
+import dev.scx.reflect.ClassInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ScxReflect;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,8 +13,8 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 import static cool.scx.common.constant.AnnotationValues.getRealValue;
-import static cool.scx.reflect.AccessModifier.PUBLIC;
-import static cool.scx.reflect.ClassKind.RECORD;
+import static dev.scx.reflect.AccessModifier.PUBLIC;
+import static dev.scx.reflect.ClassKind.RECORD;
 
 /// AnnotationConfigTable
 ///

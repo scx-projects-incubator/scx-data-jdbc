@@ -1,10 +1,10 @@
 package cool.scx.data.jdbc;
 
-import cool.scx.data.Aggregator;
-import cool.scx.data.aggregation.Aggregation;
-import cool.scx.data.exception.DataAccessException;
-import cool.scx.data.query.Query;
-import cool.scx.function.Function1Void;
+import dev.scx.data.Aggregator;
+import dev.scx.data.aggregation.Aggregation;
+import dev.scx.data.exception.DataAccessException;
+import dev.scx.data.query.Query;
+import dev.scx.function.Function1Void;
 import cool.scx.jdbc.sql.SQLRunnerException;
 
 import java.util.List;

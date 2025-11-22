@@ -7,7 +7,7 @@ import cool.scx.jdbc.JDBCContext;
 import cool.scx.jdbc.SchemaHelper;
 import cool.scx.jdbc.spy.Spy;
 import cool.scx.jdbc.sql.SQL;
-import cool.scx.logging.ScxLogging;
+import dev.scx.logging.ScxLogging;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.mysql.cj.conf.PropertyKey.*;
-import static cool.scx.data.aggregation.AggregationBuilder.agg;
-import static cool.scx.data.aggregation.AggregationBuilder.groupBy;
-import static cool.scx.data.field_policy.FieldPolicyBuilder.exclude;
-import static cool.scx.data.field_policy.FieldPolicyBuilder.virtualField;
-import static cool.scx.data.query.QueryBuilder.eq;
-import static cool.scx.data.query.QueryBuilder.lt;
+import static dev.scx.data.aggregation.AggregationBuilder.agg;
+import static dev.scx.data.aggregation.AggregationBuilder.groupBy;
+import static dev.scx.data.field_policy.FieldPolicyBuilder.exclude;
+import static dev.scx.data.field_policy.FieldPolicyBuilder.virtualField;
+import static dev.scx.data.query.QueryBuilder.eq;
+import static dev.scx.data.query.QueryBuilder.lt;
 
 public class JDBCDaoTest {
 

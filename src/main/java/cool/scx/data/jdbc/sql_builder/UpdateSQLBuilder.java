@@ -1,11 +1,11 @@
 package cool.scx.data.jdbc.sql_builder;
 
-import cool.scx.data.field_policy.FieldPolicy;
+import dev.scx.data.field_policy.FieldPolicy;
 import cool.scx.data.jdbc.mapping.EntityTable;
 import cool.scx.data.jdbc.parser.JDBCColumnNameParser;
 import cool.scx.data.jdbc.parser.JDBCOrderByParser;
 import cool.scx.data.jdbc.parser.JDBCWhereParser;
-import cool.scx.data.query.Query;
+import dev.scx.data.query.Query;
 import cool.scx.jdbc.dialect.Dialect;
 import cool.scx.jdbc.mapping.Column;
 import cool.scx.jdbc.sql.SQL;
@@ -73,7 +73,7 @@ public class UpdateSQLBuilder {
         var sql = GetUpdateSQL(finalUpdateSetClauses, whereClause.expression(), orderByClauses, query.getLimit());
         //8, 提取 entity 参数
         var entityParams = extractValues(updateSetColumns, entity);
-        //9, 拼接参数 
+        //9, 拼接参数
         var finalParams = concat(entityParams, whereClause.params());
         return sql(sql, finalParams);
     }
